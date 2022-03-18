@@ -50,13 +50,12 @@ def queue_markup(
             ),
         ],
     ]
-    upl = InlineKeyboardMarkup(
+    return InlineKeyboardMarkup(
         not_dur if DURATION == "Unknown" else dur
     )
-    return upl
 
 def queue_back_markup(_, CPLAY):
-    upl = InlineKeyboardMarkup(
+    return InlineKeyboardMarkup(
         [
             [
                 InlineKeyboardButton(
@@ -70,4 +69,3 @@ def queue_back_markup(_, CPLAY):
             ]
         ]
     )
-    return upl
